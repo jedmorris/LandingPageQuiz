@@ -1,10 +1,26 @@
 :root {
+    --title-font: 'Roboto', sans-serif;
+    --subtitle-font: 'Open Sans', sans-serif;
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
 }
 
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--title-font);
+}
 
 html,
 body {
@@ -12,22 +28,26 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--jm-body-font);
     display: flex;
     flex-direction: column;
     background-position: top right;
     background-repeat: no-repeat;
+    font-family: var(--title-font);
+    color: var(--cf-light)
 }
 
 .bodyBG {
-    background-image: url("/img/LandingPage_1920.png"), var(--cf-darkblue);
+    background: url("/img/LandingPage_576.png"), var(--cf-darkblue);
     background-position: top right;
     background-repeat: no-repeat;
 }
 
-nav {
-    background-color: transparent;
-}
+nav {}
+
+mainTitles {}
+
+subTitle {}
 
 .content {
     flex: 1 0 auto;
