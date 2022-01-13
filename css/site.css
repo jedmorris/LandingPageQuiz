@@ -15,9 +15,18 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
     background-position: top right;
     background-repeat: no-repeat;
+}
+
+.bodyBG {
+    background-image: url("/img/LandingPage_1920.png"), var(--cf-darkblue);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: transparent;
 }
 
 .content {
@@ -26,4 +35,5 @@ body {
 
 .footer {
     flex-shrink: 0;
+    background-color: transparent;
 }
