@@ -1,6 +1,5 @@
 :root {
     --title-font: 'Roboto', sans-serif;
-    --subtitle-font: 'Open Sans', sans-serif;
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
@@ -28,11 +27,9 @@ body {
 }
 
 body {
-    font-family: var(--jm-body-font);
     display: flex;
     flex-direction: column;
     background-position: top right;
-    background-repeat: no-repeat;
     font-family: var(--title-font);
     color: var(--cf-light)
 }
@@ -43,12 +40,20 @@ body {
     background-repeat: no-repeat;
 }
 
-nav {}
+.mainTitle {
+    font-family: var(--title-font);
+    font-size: 1.5em;
+}
 
-mainTitles {}
 
-subTitle {}
+.subTitle {
+    font-family: var(--title-font);
+    font-size: 1em;
+}
 
+.navbar {
+    color: var(--cf-light);
+}
 .content {
     flex: 1 0 auto;
 }
@@ -56,4 +61,36 @@ subTitle {}
 .footer {
     flex-shrink: 0;
     background-color: transparent;
+}
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 575.98px) {
+    ...
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 767.98px) {
+    ...
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 991.98px) {
+    ...
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1199.98px) {
+    ...
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1399.98px) {
+    ...
 }
